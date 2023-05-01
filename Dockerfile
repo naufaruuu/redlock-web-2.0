@@ -33,6 +33,7 @@ COPY init.sh /
 COPY redlock-db.sql /
 COPY db.php /var/www/html/
 COPY index.php /var/www/html/
+COPY count.php /var/www/html
 
 # Change owner
 RUN chmod -R u+rwX,g+rX,o-rwx /var/www/html && \
